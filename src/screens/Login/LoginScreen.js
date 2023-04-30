@@ -7,6 +7,7 @@ StyleSheet,
 TouchableOpacity
  } from 'react-native'
 
+
  import {MaterialIcons,Entypo} from '@expo/vector-icons';
 
  import CustomInput from '../../components/CustomInput'
@@ -60,7 +61,7 @@ TouchableOpacity
 
         <CustomButtomLogin style={styles.ButtomLogin}
                 label={'Sign In'}
-                onPress={()=> navigation.navigate('Home')}
+                onPress={()=> navigation.navigate('Main')}
             />
             </View>
 
