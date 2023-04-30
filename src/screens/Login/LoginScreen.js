@@ -26,7 +26,7 @@ TouchableOpacity
             </Text>
             <Text style={styles.TextInputs}>Username or email address</Text>
     <CustomInput
-     
+        label={'Uname@mail.com'}
             icon={
                 <MaterialIcons
                     name='alternate-email'
@@ -41,7 +41,7 @@ TouchableOpacity
             />
             <Text style={styles.TextInputs}>Password</Text>
     <CustomInput
-             
+                label={'Password'}
                 icon={
                     <Entypo
                         name='key'
@@ -52,7 +52,7 @@ TouchableOpacity
                     />
                 }
                 inputType='password'
-                fieldButtonLabel={'Esqueceu sua senha?'}
+                fieldButtonLabel={'Forgot your password?'}
                 fieldButtonFunction={()=>{}}
 
             />
