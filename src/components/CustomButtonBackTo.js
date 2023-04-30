@@ -3,7 +3,9 @@ import { Text, TouchableOpacity } from "react-native";
 
 import { LinearGradient } from 'expo-linear-gradient';
 
-export default function CustomButtomLogin({label, onPress}){
+import {MaterialIcons,Entypo} from '@expo/vector-icons';
+
+export default function CustomButtomBackTo({label, onPress}){
     return (
          <TouchableOpacity onPress={onPress} style={{alignItems: 'center'}}
          >
@@ -18,7 +20,7 @@ export default function CustomButtomLogin({label, onPress}){
             justifyContent:'center',
         
             }}
-	colors={['#6A2597','#30a5e8']}>
+	colors={['#ccc','#30a5e8']}>
   
         <Text
             style={{
@@ -28,6 +30,12 @@ export default function CustomButtomLogin({label, onPress}){
                 color: '#fff'
             }}
         >
+           <MaterialIcons
+                    name="west"
+                    size={20}
+                    color='#fff'
+                    alignItems='center'
+                />
    
         {label}
 

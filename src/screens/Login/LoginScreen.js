@@ -53,7 +53,7 @@ TouchableOpacity
                 }
                 inputType='password'
                 fieldButtonLabel={'Forgot your password?'}
-                fieldButtonFunction={()=>{}}
+                fieldButtonFunction={()=> navigation.navigate('Password')}
 
             />
     
@@ -67,10 +67,10 @@ TouchableOpacity
                  
             <View style={styles.ViewRegister
             }>
-                <Text style={styles.TextRegister} >New to VsCode?</Text>
+                 <Text style={styles.TextRegister} >Don't have account?</Text>
                 <TouchableOpacity
                     onPress={() => navigation.navigate('Register')}>
-                    <Text style={styles.TextRegister} > Create an account.</Text>
+                    <Text style={styles.TextRegister1} > Sign Up.</Text>
                 </TouchableOpacity>
             </View>
         
@@ -124,6 +124,14 @@ TouchableOpacity
         alignSelf:'center'  
     },
     TextRegister:{
+        alignItems:'center',
+        fontSize:16,
+        marginTop:15,
+        color:"#ccc"
+
+        
+    },
+    TextRegister1:{
         alignItems:'center',
         fontSize:16,
         marginTop:15
